@@ -1,0 +1,97 @@
+body {
+  background-color: rgb(10, 10, 10);
+  color: rgb(240, 240, 240);
+  font-family: "Open Sans", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  height: 100vh;
+  /* overflow: scroll; */
+  animation: mymove 13s infinite;
+}
+
+@keyframes mymove {
+  0% {
+    background-color: rgb(10, 10, 10);
+  }
+  50% {
+    background-color: rgb(73, 73, 73);
+  }
+  100% {
+    background-color: rgb(10, 10, 10);
+  }
+}
+
+.pfp {
+  display: block;
+  margin: 4% auto 2% auto;
+  border-radius: 50%;
+  height: 200px;
+  width: 200px;
+}
+
+.div-pfname {
+  text-align: center;
+  margin: 0 auto;
+  padding: 0;
+  font-size: 14px;
+}
+
+header {
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  /* padding: 12px; */
+}
+
+.share-button {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: rgb(193, 244, 244);
+  margin: 8px 8px;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  margin: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.tile {
+  width: 92%;
+  height: 32px;
+  margin: 8px 8px;
+  background-color: rgb(92, 92, 92);
+  border-radius: 16px;
+  padding: 12px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.tile:hover {
+  /* background-color: rgb(52, 52, 52); */
+  transform: scale(1.05);
+  transition: cubic-bezier(1, 0, 0, 1) 0.2s;
+}
+
+.icon {
+  width: 32px;
+  height: 32px;
+  margin: 0;
+  padding: 0;
+}
+
+a,
+p {
+  all: unset;
+}
